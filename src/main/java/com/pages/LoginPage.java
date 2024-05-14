@@ -15,11 +15,9 @@ import com.utilities.Utilities;
 
 
 public class LoginPage {
-	
-	//STATIC VARIABLES   Send keys vechu username,password nalkiyirunnathu ozhivakki ingane variable aayi nalki.benefit enthengilum changes undengil ivde change aaaakiyal mathi.
+//  STATIC VARIABLES   Send keys vechu username,password nalkiyirunnathu ozhivakki ingane variable aayi nalki.benefit enthengilum changes undengil ivde change aaaakiyal mathi.
 //	String validUserName="standard_user";
-//	String validPassword="secret_sauce";
-	
+//	String validPassword="secret_sauce";	
 	//lOGIN PAGE WEBELEMENTS
 	By LOGINBUTTON=By.id("login-button");
 	By ERROR_TOAST=By.xpath("//h3[@data-test='error']");
@@ -57,7 +55,6 @@ public class LoginPage {
 //		Utilities.enterText(driver, USERNAME_FEILD, validUserName);  hard core matti "validUserNam" enna Static variablil koduthu.
 		Utilities.enterText(driver, USERNAME_FEILD, Utilities.readJsonFIle("validusername","./src/main/resources/login.json")); //valid username oru JSON file il ezhuthi vechitund.ippolavide ninnum read cheyyunnu.
 		
-		
 	}
 	public void Enter_valid_password() throws FileNotFoundException, IOException, ParseException
 	{
@@ -72,8 +69,7 @@ public class LoginPage {
 		Utilities.clickElement(driver, LOGINBUTTON);
 	}
 	
-	
-	
+
 	public boolean loginWithValidCredentials() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 //		Enter_valid_username();
@@ -87,7 +83,6 @@ public class LoginPage {
 
 	
 		Thread.sleep(1000);
-		
 		String expectedUrl="https://www.saucedemo.com/v1/inventory.html";
         String actualUrl= driver.getCurrentUrl();
         System.out.println(expectedUrl+"="+actualUrl);

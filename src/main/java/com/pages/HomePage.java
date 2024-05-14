@@ -8,6 +8,8 @@ import com.utilities.Utilities;
 
 public class HomePage {
 	
+	//changes i made 
+	
 	By HOMEPAGE_APPLOGO=By.xpath("//div[@class='app_logo']");
 	By MENU_ICON=By.xpath("//button[normalize-space()='Open Menu']");
 	By CLOSE_MENU_ICON=By.xpath("//button[normalize-space()='Close Menu']");

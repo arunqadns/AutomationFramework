@@ -1,9 +1,7 @@
 package com.tests;
 import java.io.IOException;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import com.configurations.Base;
 import com.pages.HomePage;
 import com.pages.LoginPage;
@@ -27,16 +25,10 @@ public class BaseTest extends Base {
 		 Home= new HomePage(driver);
 	}
 	
-	
-	
-
 	@AfterMethod
 	public void afterMethod()
 	{
 		driver.close();
 	}
-	
-	
-
 	
 }

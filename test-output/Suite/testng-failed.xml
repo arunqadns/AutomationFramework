@@ -3,15 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tests.HomeTest">
+      <class name="com.tests.LoginTest">
         <methods>
-          <include name="beforeTest"/>
-          <include name="Verify_Applogo"/>
-          <include name="afterSuite"/>
-          <include name="resultset"/>
           <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="LogOutCheck"/>
         </methods>
-      </class> <!-- com.tests.HomeTest -->
+      </class> <!-- com.tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

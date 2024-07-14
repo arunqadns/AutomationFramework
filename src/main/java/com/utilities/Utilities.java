@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 import java.util.Properties;
 
 import org.json.simple.JSONObject;
@@ -17,6 +18,7 @@ public class Utilities {
 	public static boolean isElementDisplayed(WebDriver driver,By byLocator)
 	{
 		return driver.findElement(byLocator).isDisplayed();	
+
 	}
 	
 	public static void clickElement(WebDriver driver,By byLocator)
@@ -28,6 +30,10 @@ public class Utilities {
 	{
 		return driver.findElement(byLocator).getText();	
 	}
+	
+
+	
+	
 	
 	public static void enterText(WebDriver driver,By byLocator,String value)
 	{

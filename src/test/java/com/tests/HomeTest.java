@@ -17,86 +17,60 @@ public class HomeTest extends BaseTest {
 	@Test(priority = 0)
 
 	public void Verify_Applogo() throws InterruptedException, FileNotFoundException, IOException, ParseException
-
 	{
-		
-//		driver=new ChromeDriver();
-//		driver.get("https://www.saucedemo.com/v1/");
-//		driver.manage().window().maximize();
-//		LoginPage login= new LoginPage(driver);
-//		HomePage Home= new HomePage(driver);
-
 		login.Enter_valid_username();
 		login.Enter_valid_password();
-		login.loginButtonClick();
-		Assert.assertEquals(Home.ApplogoDisplaying(), true);
-		
-	
+		login.LoginButtonClick();
+		Assert.assertEquals(true,home.IsApplogoDisplaying());
 
-//		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void Veryfy_Menu_icon() throws InterruptedException, FileNotFoundException, IOException, ParseException {
 
-
-//	driver=new ChromeDriver();
-//	driver.get("https://www.saucedemo.com/v1/");
-//	driver.manage().window().maximize();
-//	LoginPage login= new LoginPage(driver);
-//	HomePage Home= new HomePage(driver);
-
-		login.Enter_valid_username();
-		login.Enter_valid_password();
-		login.loginButtonClick();
-		Home.ApplogoDisplaying();
-
-		
-//	driver.close();
-	}
 
 	@Test(priority = 2)
-	public void Veryfy_SideMenu_open() throws InterruptedException, FileNotFoundException, IOException, ParseException {
-
-// driver=new ChromeDriver();
-// driver.get("https://www.saucedemo.com/v1/");
-// driver.manage().window().maximize();
-// LoginPage login= new LoginPage(driver);
-// HomePage Home= new HomePage(driver);
+	public void Veryfy_SideMenu_open() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	{
 
 		login.Enter_valid_username();
 		login.Enter_valid_password();
-		login.loginButtonClick();
+		login.LoginButtonClick();
+		Thread.sleep(1000);
+		home.MenuButtonClick();
+		Assert.assertEquals(true,home.IsSideNavBarOpen());
 
-		boolean ww = Home.SideNavBarOpen();
-
-		System.out.println("bool=" + ww);
-		Assert.assertEquals(ww, true);
-		
-
-//driver.close();
 
 	}
 
 	@Test(priority = 3)
-	public void Veryfy_SideMenu_close() throws InterruptedException, FileNotFoundException, IOException, ParseException {
-
-//driver=new ChromeDriver();
-//driver.get("https://www.saucedemo.com/v1/");
-//driver.manage().window().maximize();
-//LoginPage login= new LoginPage(driver);
-//HomePage Home= new HomePage(driver);
+	public void Veryfy_SideMenu_close() throws InterruptedException, FileNotFoundException, IOException, ParseException 
+	{
 
 		login.Enter_valid_username();
 		login.Enter_valid_password();
-		login.loginButtonClick();
-		boolean ww = Home.SideNavBarclose();
-
-		System.out.println(ww);
-		Assert.assertEquals(ww, false);
+		login.LoginButtonClick();
+		Thread.sleep(1000);
+		home.MenuButtonClick();
+		Thread.sleep(1000);
+		if(true==home.IsSideNavBarOpen())
+		{
+		home.CloseMenuButtonClick();
+		}
+		Thread.sleep(1000);
+		Assert.assertEquals(false, home.IsSideNavBarclose());
 
 	
 //driver.close();
+	}
+	@Test(priority = 4)
+	public void Verify_Inventory_Items_Container() throws FileNotFoundException, IOException, ParseException, InterruptedException
+	{
+		login.Enter_valid_username();
+		login.Enter_valid_password();
+		login.LoginButtonClick();
+		Thread.sleep(1000);
+		boolean ww =home.InventoryContainer();
+		Assert.assertEquals(ww, true);
+		
 	}
 
 }

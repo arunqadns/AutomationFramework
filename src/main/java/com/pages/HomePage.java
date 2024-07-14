@@ -11,12 +11,13 @@ public class HomePage {
 	//changes i made 
 	
 	By HOMEPAGE_APPLOGO=By.xpath("//div[@class='app_logo']");
-	By MENU_ICON=By.xpath("//button[normalize-space()='Open Menu']");
 	By CLOSE_MENU_ICON=By.xpath("//button[normalize-space()='Close Menu']");
-	
 	By ABOUTSIDEBAR_LINK=By.xpath("//a[@id='about_sidebar_link']");
-	
+	By INVENTORY_CONTAINER=By.id("inventory_container");
+	By MENU_ICON=By.cssSelector("div[class='bm-burger-button'] button");
+	By LOGOUTBUTTON=By.id("logout_sidebar_link");
 	WebDriver driver;
+	String HOMEPAGEURL="https://www.saucedemo.com/v1/inventory.html";
 	
 	
 	public HomePage(WebDriver driver)//constructor
@@ -26,44 +27,60 @@ public class HomePage {
 	
 	
 	
-	
-	public boolean ApplogoDisplaying() throws InterruptedException
-	
+	public boolean IsApplogoDisplaying() throws InterruptedException
 	{
 		//return driver.findElement(HOMEPAGE_APPLOGO).isDisplayed();
 		return Utilities.isElementDisplayed(driver, HOMEPAGE_APPLOGO);
 	}
 	
-	public boolean MenuiconDisplaying()
+	public boolean IsMenuiconDisplaying()
 	{
 		//return driver.findElement(MENU_ICON).isDisplayed();
 		return Utilities.isElementDisplayed(driver, MENU_ICON);
 	}
 	
-	public boolean SideNavBarOpen() throws InterruptedException
-	{
-		//driver.findElement(MENU_ICON).click();
+	public void MenuButtonClick()
+	{	
 		Utilities.clickElement(driver, MENU_ICON);
-		
-		Thread.sleep(2000);
-		//return driver.findElement(ABOUTSIDEBAR_LINK).isDisplayed();
+	}
+	
+	public void CloseMenuButtonClick()
+	{	
+		Utilities.clickElement(driver, CLOSE_MENU_ICON);
+	}
+	
+	
+	public boolean IsThisHomePage()
+	{
+		boolean result=false;
+		if(driver.getCurrentUrl().equalsIgnoreCase(HOMEPAGEURL))
+		{
+			result=true;
+		}
+		return result;
+	}
+	
+
+	
+	public boolean IsSideNavBarOpen() throws InterruptedException
+	{
 		return Utilities.isElementDisplayed(driver, ABOUTSIDEBAR_LINK);
 		
 	}
 	
-	public boolean SideNavBarclose() throws InterruptedException
+	public boolean IsSideNavBarclose() throws InterruptedException
 	{
-		//driver.findElement(By.xpath("//button[normalize-space()='Open Menu']")).click();
-		Utilities.clickElement(driver, MENU_ICON);
-		
-		Thread.sleep(2000);
-		//driver.findElement(By.xpath("//button[normalize-space()='Close Menu']")).click();
-		Utilities.clickElement(driver, CLOSE_MENU_ICON);
-		
-		Thread.sleep(2000);
-		//return driver.findElement(By.xpath("//button[normalize-space()='Open Menu']")).isDisplayed();
 		
 		return Utilities.isElementDisplayed(driver, ABOUTSIDEBAR_LINK);
+	}
+	
+	public boolean InventoryContainer() throws InterruptedException
+	{
+
+		Thread.sleep(2000);
+		//return driver.findElement(ABOUTSIDEBAR_LINK).isDisplayed();
+		return Utilities.isElementDisplayed(driver, INVENTORY_CONTAINER);
+		
 	}
 	
 	

@@ -10,7 +10,7 @@ public class BaseTest extends Base {
 	
 //	WebDriver driver;
 	LoginPage login;
-	HomePage Home;
+	HomePage home;
 	//----------------------
 
 	@BeforeMethod
@@ -22,7 +22,7 @@ public class BaseTest extends Base {
 		
 		initialisation();// mukalil kaanunnathellam initialisation enna Method Base clasil koduthu.
 		 login= new LoginPage(driver);
-		 Home= new HomePage(driver);
+		 home= new HomePage(driver);
 	}
 	
 	@AfterMethod

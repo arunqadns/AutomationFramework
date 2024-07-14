@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tests.HomeTest">
+      <class name="com.tests.LoginTest">
         <methods>
-          <include name="beforeTest"/>
-          <include name="Verify_Applogo"/>
-          <include name="afterSuite"/>
-          <include name="resultset"/>
+          <include name="PressloginButtonWithValidUserNameInvalidPasswordAlert"/>
           <include name="setUp"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.tests.HomeTest -->
+      </class> <!-- com.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

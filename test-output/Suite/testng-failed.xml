@@ -5,9 +5,14 @@
     <classes>
       <class name="com.tests.LoginTest">
         <methods>
+          <include name="UsernameFieldsDisplaying"/>
+          <include name="LoginWithInvalidUserNameAndValidPassword"/>
+          <include name="loginWithInvalidCredentials"/>
+          <include name="VerifyloginButtonDisplaying"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="LogOutCheck"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="PasswordFieldsDisplaying"/>
         </methods>
       </class> <!-- com.tests.LoginTest -->
     </classes>

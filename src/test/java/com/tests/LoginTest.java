@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.json.simple.parser.ParseException;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import com.utilities.Utilities;
@@ -12,10 +14,13 @@ import com.utilities.Utilities;
 public class LoginTest extends BaseTest{	
 
 	
-	
 	//Check the Login Functionality
 	
-	@Test(priority=0)
+		
+	
+
+	
+	@Test(priority=0,enabled=true)
 	public void VerifyloginButtonDisplaying() throws InterruptedException {
 //ivde login page ile Method vilikunnu athinu munp login paginte 
 //object creat cheyyunnund athu BaseTest classil Befor methodil koduthitund.
@@ -153,6 +158,6 @@ public class LoginTest extends BaseTest{
 
 	
 	
-	
+	}
 
-}
+

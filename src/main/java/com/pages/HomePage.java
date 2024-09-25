@@ -1,5 +1,8 @@
 package com.pages;
 
+import java.util.Collections;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -11,6 +14,8 @@ public class HomePage {
 	//changes i made 
 	
 	By HOMEPAGE_APPLOGO=By.xpath("//div[@class='app_logo']");
+	By SORT_OPTION=By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/select[1]");
+	By PRODUCT_TITLE=By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]");
 	By CLOSE_MENU_ICON=By.xpath("//button[normalize-space()='Close Menu']");
 	By ABOUTSIDEBAR_LINK=By.xpath("//a[@id='about_sidebar_link']");
 	By INVENTORY_CONTAINER=By.id("inventory_container");
@@ -27,16 +32,22 @@ public class HomePage {
 	
 	
 	
-	public boolean IsApplogoDisplaying() throws InterruptedException
+	public boolean IsProductTitleDisplaying() throws InterruptedException
 	{
 		//return driver.findElement(HOMEPAGE_APPLOGO).isDisplayed();
-		return Utilities.isElementDisplayed(driver, HOMEPAGE_APPLOGO);
+		return Utilities.isElementDisplayed(driver, PRODUCT_TITLE);
 	}
 	
 	public boolean IsMenuiconDisplaying()
 	{
 		//return driver.findElement(MENU_ICON).isDisplayed();
 		return Utilities.isElementDisplayed(driver, MENU_ICON);
+	}
+	
+	public boolean IsSortOptionDisplaying()
+	{
+		//return driver.findElement(MENU_ICON).isDisplayed();
+		return Utilities.isElementDisplayed(driver,SORT_OPTION);
 	}
 	
 	public void MenuButtonClick()
@@ -64,6 +75,7 @@ public class HomePage {
 	
 	public boolean IsSideNavBarOpen() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		return Utilities.isElementDisplayed(driver, ABOUTSIDEBAR_LINK);
 		
 	}
@@ -82,7 +94,7 @@ public class HomePage {
 		return Utilities.isElementDisplayed(driver, INVENTORY_CONTAINER);
 		
 	}
-	
+
 	
 	
 

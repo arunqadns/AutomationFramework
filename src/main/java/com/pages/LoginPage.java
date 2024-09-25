@@ -173,42 +173,30 @@ public class LoginPage {
 		    {
 	        driver.findElement(USERNAME_FEILD).clear();
 	        String Value1=String.valueOf(sh.getRow(i).getCell(0).getStringCellValue());
-	        System.out.println((sh.getRow(i).getCell(0).getStringCellValue()).getClass().getName());
 	        String Value11=Value1.strip();
-	        System.out.println(Value11);
 	        driver.findElement(USERNAME_FEILD).sendKeys(Value11);
 			        
-			        
-	        System.out.println(Value1.length());
-	        System.out.println(Value11.length());
-			       
+			        		       
 	        driver.findElement(PASSWORD_FEILD).clear();
         	String Value2=String.valueOf(sh.getRow(i).getCell(1).getStringCellValue());
-	        System.out.println((sh.getRow(i).getCell(1).getStringCellValue()).getClass().getName());
 	        String Value22=Value2.strip();
 
-	        System.out.println(Value22);
-	        System.out.println(Value2.length());
-	        System.out.println(Value22.length());
 	        driver.findElement(PASSWORD_FEILD).sendKeys(Value22);
-
 	        driver.findElement(LOGINBUTTON).click();
 
 	        Thread.sleep(4000);
 
 	        String expectedUrl="https://www.saucedemo.com/v1/inventory.html";
 	        String actualUrl= driver.getCurrentUrl();
-	        System.out.println(expectedUrl+"="+actualUrl);
+
 	        if (actualUrl.equalsIgnoreCase(expectedUrl)) 
 	        {
-            System.out.println("login successful");
             sh.getRow(i).createCell(2).setCellValue("pass");
     		} 
 	        else {
-        	System.out.println("login failed");
+
             sh.getRow(i).createCell(2).setCellValue("fail");
 		        }
-
 	        FileOutputStream output = new FileOutputStream("./src/main/resources/credentials.xlsx");
 	        wb.write(output);
 	        output.close(); // close the FileOutputStream

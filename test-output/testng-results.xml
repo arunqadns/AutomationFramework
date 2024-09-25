@@ -1,25 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-14T20:06:49 IST" name="Default suite" finished-at="2024-07-14T20:06:53 IST" duration-ms="4148">
+  <suite started-at="2024-09-25T17:08:25 IST" name="Suite" finished-at="2024-09-25T17:09:49 IST" duration-ms="84006">
     <groups>
     </groups>
-    <test started-at="2024-07-14T20:06:49 IST" name="Default test" finished-at="2024-07-14T20:06:53 IST" duration-ms="4148">
-      <class name="com.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@298a5e20]" started-at="2024-07-14T20:06:49 IST" name="setUp" finished-at="2024-07-14T20:06:52 IST" duration-ms="3186" status="PASS">
+    <test started-at="2024-09-25T17:08:25 IST" name="Test" finished-at="2024-09-25T17:09:49 IST" duration-ms="84006">
+      <class name="com.tests.HomeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:27 IST" name="setUp" finished-at="2024-09-25T17:09:28 IST" duration-ms="1449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="PressloginButtonWithValidUserNameInvalidPasswordAlert()[pri:9, instance:com.tests.LoginTest@298a5e20]" started-at="2024-07-14T20:06:52 IST" name="PressloginButtonWithValidUserNameInvalidPasswordAlert" finished-at="2024-07-14T20:06:53 IST" duration-ms="716" status="PASS">
+        <test-method signature="Verify_Products_Title()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:28 IST" name="Verify_Products_Title" finished-at="2024-09-25T17:09:30 IST" duration-ms="1688" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PressloginButtonWithValidUserNameInvalidPasswordAlert -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@298a5e20]" started-at="2024-07-14T20:06:53 IST" name="afterMethod" finished-at="2024-07-14T20:06:53 IST" duration-ms="148" status="PASS">
+        </test-method> <!-- Verify_Products_Title -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:30 IST" name="afterMethod" finished-at="2024-09-25T17:09:30 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:30 IST" name="setUp" finished-at="2024-09-25T17:09:31 IST" duration-ms="1376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Sort_Option()[pri:1, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:31 IST" name="Verify_Sort_Option" finished-at="2024-09-25T17:09:33 IST" duration-ms="1874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Sort_Option -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:33 IST" name="afterMethod" finished-at="2024-09-25T17:09:33 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:33 IST" name="setUp" finished-at="2024-09-25T17:09:35 IST" duration-ms="1383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Veryfy_SideMenu_open()[pri:2, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:35 IST" name="Veryfy_SideMenu_open" finished-at="2024-09-25T17:09:37 IST" duration-ms="2735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Veryfy_SideMenu_open -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:37 IST" name="afterMethod" finished-at="2024-09-25T17:09:38 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:38 IST" name="setUp" finished-at="2024-09-25T17:09:39 IST" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Veryfy_SideMenu_close()[pri:3, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:39 IST" name="Veryfy_SideMenu_close" finished-at="2024-09-25T17:09:44 IST" duration-ms="4879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Veryfy_SideMenu_close -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:44 IST" name="afterMethod" finished-at="2024-09-25T17:09:44 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:44 IST" name="setUp" finished-at="2024-09-25T17:09:45 IST" duration-ms="1315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_Inventory_Items_Container()[pri:4, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:45 IST" name="Verify_Inventory_Items_Container" finished-at="2024-09-25T17:09:49 IST" duration-ms="3882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Inventory_Items_Container -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.HomeTest@4b29d1d2]" started-at="2024-09-25T17:09:49 IST" name="afterMethod" finished-at="2024-09-25T17:09:49 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.tests.HomeTest -->
+      <class name="com.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:25 IST" name="setUp" finished-at="2024-09-25T17:08:28 IST" duration-ms="2331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyloginButtonDisplaying()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:28 IST" name="VerifyloginButtonDisplaying" finished-at="2024-09-25T17:08:28 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyloginButtonDisplaying -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:28 IST" name="afterMethod" finished-at="2024-09-25T17:08:28 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:28 IST" name="setUp" finished-at="2024-09-25T17:08:29 IST" duration-ms="1401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="UsernameFieldsDisplaying()[pri:1, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:29 IST" name="UsernameFieldsDisplaying" finished-at="2024-09-25T17:08:29 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsernameFieldsDisplaying -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:29 IST" name="afterMethod" finished-at="2024-09-25T17:08:29 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:29 IST" name="setUp" finished-at="2024-09-25T17:08:31 IST" duration-ms="1245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PasswordFieldsDisplaying()[pri:2, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:31 IST" name="PasswordFieldsDisplaying" finished-at="2024-09-25T17:08:31 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PasswordFieldsDisplaying -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:31 IST" name="afterMethod" finished-at="2024-09-25T17:08:31 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:31 IST" name="setUp" finished-at="2024-09-25T17:08:32 IST" duration-ms="1323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithValidCredentials()[pri:3, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:32 IST" name="loginWithValidCredentials" finished-at="2024-09-25T17:08:34 IST" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:34 IST" name="afterMethod" finished-at="2024-09-25T17:08:34 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:34 IST" name="setUp" finished-at="2024-09-25T17:08:35 IST" duration-ms="1315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidCredentials()[pri:4, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:35 IST" name="loginWithInvalidCredentials" finished-at="2024-09-25T17:08:36 IST" duration-ms="1377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:36 IST" name="afterMethod" finished-at="2024-09-25T17:08:37 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:37 IST" name="setUp" finished-at="2024-09-25T17:08:38 IST" duration-ms="1334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithInvalidUserNameAndValidPassword()[pri:5, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:38 IST" name="LoginWithInvalidUserNameAndValidPassword" finished-at="2024-09-25T17:08:39 IST" duration-ms="1368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidUserNameAndValidPassword -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:39 IST" name="afterMethod" finished-at="2024-09-25T17:08:39 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:39 IST" name="setUp" finished-at="2024-09-25T17:08:41 IST" duration-ms="1442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginWithValidUserNameAndInvalidPassword()[pri:6, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:41 IST" name="LoginWithValidUserNameAndInvalidPassword" finished-at="2024-09-25T17:08:42 IST" duration-ms="1362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidUserNameAndInvalidPassword -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:42 IST" name="afterMethod" finished-at="2024-09-25T17:08:42 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:42 IST" name="setUp" finished-at="2024-09-25T17:08:43 IST" duration-ms="1216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PressloginButtonWithoutEnterCredentialsAlert()[pri:7, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:43 IST" name="PressloginButtonWithoutEnterCredentialsAlert" finished-at="2024-09-25T17:08:44 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PressloginButtonWithoutEnterCredentialsAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:44 IST" name="afterMethod" finished-at="2024-09-25T17:08:44 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:44 IST" name="setUp" finished-at="2024-09-25T17:08:45 IST" duration-ms="1212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PressloginButtonWithoutUserNameWithPasswordAlert()[pri:8, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:45 IST" name="PressloginButtonWithoutUserNameWithPasswordAlert" finished-at="2024-09-25T17:08:45 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PressloginButtonWithoutUserNameWithPasswordAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:45 IST" name="afterMethod" finished-at="2024-09-25T17:08:45 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:45 IST" name="setUp" finished-at="2024-09-25T17:08:46 IST" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PressloginButtonWithUserNameWithoutPasswordAlert()[pri:9, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:46 IST" name="PressloginButtonWithUserNameWithoutPasswordAlert" finished-at="2024-09-25T17:08:47 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PressloginButtonWithUserNameWithoutPasswordAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:47 IST" name="afterMethod" finished-at="2024-09-25T17:08:47 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:47 IST" name="setUp" finished-at="2024-09-25T17:08:48 IST" duration-ms="1248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PressloginButtonWithInvalidUserNameInvalidPasswordAlert()[pri:10, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:48 IST" name="PressloginButtonWithInvalidUserNameInvalidPasswordAlert" finished-at="2024-09-25T17:08:48 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PressloginButtonWithInvalidUserNameInvalidPasswordAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:48 IST" name="afterMethod" finished-at="2024-09-25T17:08:48 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:48 IST" name="setUp" finished-at="2024-09-25T17:08:50 IST" duration-ms="1305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LogOutCheck()[pri:11, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:50 IST" name="LogOutCheck" finished-at="2024-09-25T17:08:57 IST" duration-ms="7247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutCheck -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:57 IST" name="afterMethod" finished-at="2024-09-25T17:08:57 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:57 IST" name="setUp" finished-at="2024-09-25T17:08:58 IST" duration-ms="1406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginExcel()[pri:12, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:08:58 IST" name="loginExcel" finished-at="2024-09-25T17:09:27 IST" duration-ms="28139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginExcel -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.tests.LoginTest@6892b3b6]" started-at="2024-09-25T17:09:27 IST" name="afterMethod" finished-at="2024-09-25T17:09:27 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

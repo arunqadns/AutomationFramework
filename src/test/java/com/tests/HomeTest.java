@@ -7,44 +7,50 @@ import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
-
 public class HomeTest extends BaseTest {
 
 //	WebDriver driver;
 	
 
 	@Test(priority = 0)
-
-	public void Verify_Applogo() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void Verify_Products_Title() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_valid_username();
 		login.Enter_valid_password();
 		login.LoginButtonClick();
-		Assert.assertEquals(true,home.IsApplogoDisplaying());
+		Thread.sleep(1000);
+	//	Assert.assertEquals(true,home.IsThisHomePage());
+		Assert.assertEquals(true,home.IsProductTitleDisplaying());
 
 	}
+	@Test(priority = 1)
 
-
-
+	public void Verify_Sort_Option() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	{
+		login.Enter_valid_username();
+		login.Enter_valid_password();
+		login.LoginButtonClick();
+		Thread.sleep(1000);
+	//	Assert.assertEquals(true,home.IsThisHomePage());
+		Assert.assertEquals(true,home.IsSortOptionDisplaying());
+	}
+	
+	
 	@Test(priority = 2)
 	public void Veryfy_SideMenu_open() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
-
 		login.Enter_valid_username();
 		login.Enter_valid_password();
 		login.LoginButtonClick();
 		Thread.sleep(1000);
 		home.MenuButtonClick();
 		Assert.assertEquals(true,home.IsSideNavBarOpen());
-
-
 	}
 
+	
 	@Test(priority = 3)
 	public void Veryfy_SideMenu_close() throws InterruptedException, FileNotFoundException, IOException, ParseException 
 	{
-
 		login.Enter_valid_username();
 		login.Enter_valid_password();
 		login.LoginButtonClick();
@@ -57,10 +63,9 @@ public class HomeTest extends BaseTest {
 		}
 		Thread.sleep(1000);
 		Assert.assertEquals(false, home.IsSideNavBarclose());
-
-	
 //driver.close();
 	}
+	
 	@Test(priority = 4)
 	public void Verify_Inventory_Items_Container() throws FileNotFoundException, IOException, ParseException, InterruptedException
 	{
@@ -69,8 +74,7 @@ public class HomeTest extends BaseTest {
 		login.LoginButtonClick();
 		Thread.sleep(1000);
 		boolean ww =home.InventoryContainer();
-		Assert.assertEquals(ww, true);
-		
+		Assert.assertEquals(ww, true);	
 	}
 
 }

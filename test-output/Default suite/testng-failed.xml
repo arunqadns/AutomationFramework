@@ -5,7 +5,7 @@
     <classes>
       <class name="com.tests.HomeTest">
         <methods>
-          <include name="Veryfy_SideMenu_open"/>
+          <include name="Verify_Menu_Icon_Present_or_Not"/>
           <include name="afterMethod"/>
           <include name="setUp"/>
         </methods>

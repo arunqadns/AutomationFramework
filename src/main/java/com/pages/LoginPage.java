@@ -124,45 +124,39 @@ public class LoginPage {
 
 	
 
-	public boolean loginWithValidCredentialsFromExcel() throws InterruptedException, FileNotFoundException, IOException, ParseException
-	{
-//		Enter_valid_username();
-		//Utilities.enterText(driver, USERNAME_FEILD, validUserName);  
-        Enter_valid_username();  //pakaram alredy mukalil ullla valid password enter cheyyunnathinulla method call cheyyikunnu.
-//		Enter_valid_password();	
-//		Utilities.enterText(driver, PASSWORD_FEILD, validPassword);
-		Enter_valid_password();	//pakaram alredy mukalil ullla valid password enter cheyyunnathinulla method call cheyyikunnu.
-//		driver.findElement(LOGINBUTTON).click();
-		LoginButtonClick();
-
+//	public boolean loginWithValidCredentialsFromExcel() throws InterruptedException, FileNotFoundException, IOException, ParseException
+//	{
+////		Enter_valid_username();
+//		//Utilities.enterText(driver, USERNAME_FEILD, validUserName);  
+//        Enter_valid_username();  //pakaram alredy mukalil ullla valid password enter cheyyunnathinulla method call cheyyikunnu.
+////		Enter_valid_password();	
+////		Utilities.enterText(driver, PASSWORD_FEILD, validPassword);
+//		Enter_valid_password();	//pakaram alredy mukalil ullla valid password enter cheyyunnathinulla method call cheyyikunnu.
+////		driver.findElement(LOGINBUTTON).click();
+//		LoginButtonClick();
+//
+//	
+//		Thread.sleep(1000);
+//		String expectedUrl="https://www.saucedemo.com/v1/inventory.html";
+//        String actualUrl= driver.getCurrentUrl();
+//        System.out.println(expectedUrl+"="+actualUrl);
+//        Boolean flag=true;
+//        if (actualUrl.equalsIgnoreCase(expectedUrl))
+//        {
+//        	flag=true;
+//        }
+//        else
+//        {
+//        	flag=false;
+//        }
+//        	
+//		return flag;
+//				
+//	}
 	
-		Thread.sleep(1000);
-		String expectedUrl="https://www.saucedemo.com/v1/inventory.html";
-        String actualUrl= driver.getCurrentUrl();
-        System.out.println(expectedUrl+"="+actualUrl);
-        Boolean flag=true;
-        if (actualUrl.equalsIgnoreCase(expectedUrl))
-        {
-        	flag=true;
-        }
-        else
-        {
-        	flag=false;
-        }
-        	
-		return flag;
-				
-	}
-	
-	
-	
-	
-	
-
 	
 	
 //Data Read From Excel	
-	
 		public void loginWithExcelTest() throws IOException, InterruptedException, ParseException
 		{
 			FileInputStream input = new FileInputStream("./src/main/resources/credentials.xlsx");

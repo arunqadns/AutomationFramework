@@ -13,32 +13,27 @@ import com.utilities.Utilities;
 
 public class LoginTest extends BaseTest{	
 
-	
-	//Check the Login Functionality
-	
-		
-	
+	//Check Login Functionality
 
-	
-	@Test(priority=0,enabled=true)
-	public void VerifyloginButtonDisplaying() throws InterruptedException {
-//ivde login page ile Method vilikunnu athinu munp login paginte 
-//object creat cheyyunnund athu BaseTest classil Befor methodil koduthitund.
+	@Test(priority=0)
+	public void Verify_loginButton_Displaying() throws InterruptedException {
+		//ivde login page ile Method vilikunnu athinu munp login paginte 
+		//object creat cheyyunnund athu BaseTest classil Befor methodil koduthitund.
 		Assert.assertEquals(true,login.IsLoginButtonDisplayed());
-		}
+	}
 	@Test(priority=1)
-	public void UsernameFieldsDisplaying() throws InterruptedException {
+	public void UsernameField_Displaying() throws InterruptedException {
 		Assert.assertEquals(true,login.IsUsernameFieldsDisplayed());
-		}
-	
+	}
+
 	@Test(priority=2)
-	public void PasswordFieldsDisplaying() throws InterruptedException {
+	public void PasswordField_Displaying() throws InterruptedException {
 		Assert.assertEquals(true,login.IsPasswordFieldsDisplayed());
-		}
-	
-	
+	}
+
+
 	@Test(priority=3)
-	public void loginWithValidCredentials() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void login_With_Valid_Credentials() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_valid_username();
 		login.Enter_valid_password();
@@ -46,9 +41,9 @@ public class LoginTest extends BaseTest{
 		Thread.sleep(1000);
 		Assert.assertEquals(true,home.IsThisHomePage());	
 	}
-	
+
 	@Test(priority=4)
-	public void loginWithInvalidCredentials() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void login_With_Invalid_Credentials() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_invalid_username();
 		login.Enter_invalid_password();
@@ -57,9 +52,9 @@ public class LoginTest extends BaseTest{
 		Assert.assertEquals(true,login.IsThisLoginPage());	
 	}
 
-	
+
 	@Test(priority=5)
-	public void LoginWithInvalidUserNameAndValidPassword() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void Login_With_Invalid_UserName_And_Valid_Password() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_invalid_username();
 		login.Enter_valid_password();
@@ -67,9 +62,9 @@ public class LoginTest extends BaseTest{
 		Thread.sleep(1000);
 		Assert.assertEquals(true,login.IsThisLoginPage());	
 	}	
-	
+
 	@Test(priority=6)
-	public void LoginWithValidUserNameAndInvalidPassword() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void Login_With_ValidUserName_And_Invalid_Password() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_invalid_username();
 		login.Enter_valid_password();
@@ -77,25 +72,19 @@ public class LoginTest extends BaseTest{
 		Thread.sleep(1000);
 		Assert.assertEquals(true,login.IsThisLoginPage());	
 	}
-	
-	
-
-	
-//	Display login error messages	
-//	
+	//	Display login error messages	
 	@Test(priority=7)
-	public void PressloginButtonWithoutEnterCredentialsAlert() throws InterruptedException
+	public void Press_login_Button_Without_Enter_Credentials_Alert() throws InterruptedException
 	{
 		login.LoginButtonClick();
 		String alertMessage=login.GetErrorToastMessage();
 		Assert.assertEquals(alertMessage, "Epic sadface: Username is required");
 	}
-	
-	
+
 	@Test(priority=8)
-	public void PressloginButtonWithoutUserNameWithPasswordAlert() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void Press_login_Button_Without_UserName_With_Password_Alert() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
-	
+
 		login.Enter_invalid_password();
 		login.LoginButtonClick();
 		String alertMessage=login.GetErrorToastMessage();
@@ -103,16 +92,16 @@ public class LoginTest extends BaseTest{
 	}
 
 	@Test(priority=9)
-	public void PressloginButtonWithUserNameWithoutPasswordAlert() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void Press_login_Button_With_UserName_Without_Password_Alert() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_invalid_username();
 		login.LoginButtonClick();
 		String alertMessage=login.GetErrorToastMessage();
 		Assert.assertEquals(alertMessage, "Epic sadface: Password is required");
 	}
-	
+
 	@Test(priority=10)
-	public void PressloginButtonWithInvalidUserNameInvalidPasswordAlert() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void Press_login_Button_With_Invalid_UserName_Invalid_Password_Alert() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_valid_username();
 		login.Enter_invalid_password();
@@ -120,17 +109,11 @@ public class LoginTest extends BaseTest{
 		String alertMessage=login.GetErrorToastMessage();
 		Assert.assertEquals(alertMessage, "Epic sadface: Username and password do not match any user in this service");
 	}	
-	
-	
-	
-	
-	
-	
-	
 
-	
+
+
 	@Test(priority=11)
-	public void LogOutCheck() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void Verify_LogOut_Button() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.Enter_valid_username();
 		login.Enter_valid_password();
@@ -142,22 +125,15 @@ public class LoginTest extends BaseTest{
 		Thread.sleep(2000);
 		Assert.assertEquals(true,login.IsLoginButtonDisplayed());	
 	}	
-	
-	
-	
-	
-		
-	
+
+
 	@Test(priority=12)
-	public void loginExcel() throws InterruptedException, FileNotFoundException, IOException, ParseException
+	public void login_With_Excel_Credentials() throws InterruptedException, FileNotFoundException, IOException, ParseException
 	{
 		login.loginWithExcelTest();
 		Assert.assertEquals(true,true);	
 	}
-	
 
-	
-	
-	}
+}
 
 
